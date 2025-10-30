@@ -1,0 +1,29 @@
+services:
+  ollama:
+    container_name: ollama-rocm
+    image: ollama/ollama:rocm
+    ports:
+      - "11434:11434"
+    volumes:
+      - /home/dru/.ollama:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+      - HSA_OVERRIDE_GFX_VERSION=11.0.0  # For Radeon 8060S (RDNA3 iGPU); adjust to 10.3.0 if needed
+      - OLLAMA_AMD=1  # Enable AMD/ROCm mode
+    devices:
+      - /dev/kfd:/dev/kfd  # ROCm compute device
+      - /dev/dri:/dev/dri  # Graphics/render devices
+    group_add:
+      - video  # Access to GPU group
+    ipc: host  # Shared IPC for multi-process ROCm
+    privileged: true  # Broad access for ROCm stability (use cautiously)
+    cap_add:
+      - SYS_PTRACE  # For debugging/troubleshooting
+    security_opt:
+      - seccomp:unconfined  # Allows syscalls needed by ROCm
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

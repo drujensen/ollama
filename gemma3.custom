@@ -1,0 +1,2 @@
+FROM PetrosStav/gemma3-tools:27b
+PARAMETER num_ctx 32000
