@@ -5,7 +5,7 @@ services:
     ports:
       - "11434:11434"
     volumes:
-      - /home/dru/.ollama:/root/.ollama
+      - /home/drujensen/.ollama:/root/.ollama
     environment:
       - OLLAMA_HOST=0.0.0.0
       - HSA_OVERRIDE_GFX_VERSION=11.0.0  # For Radeon 8060S (RDNA3 iGPU); adjust to 10.3.0 if needed
