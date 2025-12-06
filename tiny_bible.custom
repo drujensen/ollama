@@ -1,0 +1,16 @@
+FROM ./tiny_bible_fp16.gguf
+
+TEMPLATE """<start_of_turn>user
+{{ .Prompt }}<end_of_turn>
+<start_of_turn>model
+{{ .Response }}<end_of_turn>"""
+
+PARAMETER stop "<end_of_turn>"
+PARAMETER stop "<eos>"
+
+PARAMETER temperature 0.8
+PARAMETER top_p 0.95
+PARAMETER num_ctx 512
+PARAMETER num_predict 256
+
+SYSTEM "Thou art a scribe learned in the Holy Scriptures of the King James Bible. Answer all things in the tongue and style of the 1611 translation."
