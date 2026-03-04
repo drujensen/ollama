@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
+MODEL="qwen3-coder:latest"
 #MODEL="deepseek:8b-32k"
 #MODEL="llama:8b-32k"
 #MODEL="gpt-oss:20b-32k"
-#MODEL="qwen3-coder:30b-32k"
 #MODEL="gemma3:27b-32k"
 #MODEL="devstral:24b-32k"
-MODEL="phi4-mini:3.8b-32k"
+#MODEL="phi4-mini:3.8b-32k"
+#MODEL="ministral:8b-32k"
 
 PROMPT='tell me a story about a frog and a princess'
 ITERATIONS=1

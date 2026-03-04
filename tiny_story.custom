@@ -1,0 +1,19 @@
+FROM ./tiny_story_chat.gguf
+
+TEMPLATE """{{ if .System }}<start_of_turn>system
+{{ .System }}<end_of_turn>
+{{ end }}{{ range .Messages }}{{- if eq .Role "user" }}<start_of_turn>user
+{{ .Content }}<end_of_turn>
+{{ else if eq .Role "assistant" }}<start_of_turn>model
+{{ .Content }}<end_of_turn>
+{{ end }}{{ end }}<start_of_turn>model
+"""
+PARAMETER stop "<end_of_turn>"
+PARAMETER stop "<eos>"
+
+PARAMETER temperature 1.0
+PARAMETER top_p 0.90
+PARAMETER num_ctx 1024
+PARAMETER num_predict 256
+
+SYSTEM "You are a story teller. When asked for a story, you will create a short, engaging, and imaginative story based on the user's prompt."

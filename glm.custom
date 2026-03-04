@@ -1,0 +1,19 @@
+FROM glm-4.7-flash:latest
+RENDERER glm-4.7
+PARSER glm-4.7
+
+TEMPLATE """[gMASK]<sop><|system|>
+{{ .System }}
+<|user|>
+{{ .Prompt }}
+<|assistant|>
+{{ .Response }}"""
+
+PARAMETER num_ctx 96384
+PARAMETER temperature 0.7
+PARAMETER top_p 1.0
+PARAMETER min_p 0.01
+PARAMETER repeat_penalty 1.0
+
+PARAMETER stop "<|user|>"
+PARAMETER stop "<|assistant|>"
