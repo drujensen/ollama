@@ -1,0 +1,2 @@
+FROM llama3.2-vision:11b
+PARAMETER num_ctx 4096

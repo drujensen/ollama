@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
+#MODEL="qwen3-5:latest"
 MODEL="qwen3-coder:latest"
+#MODEL="gemma4:latest"
 #MODEL="deepseek:8b-32k"
 #MODEL="llama:8b-32k"
 #MODEL="gpt-oss:20b-32k"
