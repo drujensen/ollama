@@ -1,0 +1,3 @@
+bench/ollama-bench
+results/
+__pycache__/

@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1787535078395,
+  "projectRoot": "/home/drujensen/workspace/ollama",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "bench": {
+      "path": "bench",
+      "purpose": null,
+      "fileCount": 22,
+      "lastAccessed": 1787535078393,
+      "keyFiles": [
+        "AGENTS.md",
+        "README.md",
+        "accuracy.go",
+        "bench_test.go",
+        "client.go"
+      ]
+    },
+    "results": {
+      "path": "results",
+      "purpose": null,
+      "fileCount": 17,
+      "lastAccessed": 1787535078394,
+      "keyFiles": [
+        "20260823-063238.csv",
+        "20260823-063238.json",
+        "20260823-063238.md",
+        "20260823-091742-eval.csv",
+        "20260823-091742-eval.json"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}

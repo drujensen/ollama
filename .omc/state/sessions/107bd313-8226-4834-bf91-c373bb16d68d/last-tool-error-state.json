@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"SP=/tmp/claude-1000/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d/scratchpad\\necho \\\"=== autorun watcher (detached script, not a Monitor task) ===\\\"\\nps -eo pid,eti...",
+  "error": "Exit code 1\n=== autorun watcher (detached script, not a Monitor task) ===\n=== ollama ===\n{\"version\":\"0.32.15\"} (API up)\n  orphan:\n  GTT: 130 MiB\ntail: cannot open '/tmp/claude-1000/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d/scratchpad/autorun.log' for reading: No such file or directory",
+  "timestamp": "2026-08-24T20:00:15.586Z",
+  "retry_count": 1
+}

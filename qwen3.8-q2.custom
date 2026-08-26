@@ -1,0 +1,4 @@
+# Unsloth dynamic Q2 quant, ~2.9 bits/weight against Q4_K_M's ~5.2.
+# No num_ctx override, matching qwen3.8:latest so quantization is the only
+# variable in the comparison.
+FROM hf.co/unsloth/Qwen3.8-27B-GGUF:UD-Q2_K_XL

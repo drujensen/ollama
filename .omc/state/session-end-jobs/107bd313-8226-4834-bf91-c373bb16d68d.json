@@ -1,0 +1,351 @@
+{
+  "version": 1,
+  "jobId": "ae8e34a3-fcc6-4016-b29f-601c7005423d",
+  "sessionId": "107bd313-8226-4834-bf91-c373bb16d68d",
+  "scopeKey": "fb03f49e0a4d8b80e1a08802d6a7c6f0381bd602faa26513c26ab562c354f622",
+  "revision": 42,
+  "createdAt": "2026-08-24T01:37:34.837Z",
+  "updatedAt": "2026-08-26T14:13:20.557Z",
+  "producerGraceExpiresAt": "2026-08-24T01:38:04.838Z",
+  "bestEffortDeadlineAt": "2026-08-24T01:38:55.838Z",
+  "producers": {
+    "core": {
+      "state": "sealed",
+      "intentKey": "0a1f5f2a484d1ba924904b9725a70c9ac77163988a52f032707ea0f59bc353c1",
+      "payloadDigest": "0a1f5f2a484d1ba924904b9725a70c9ac77163988a52f032707ea0f59bc353c1",
+      "sealedAt": "2026-08-24T01:37:34.844Z",
+      "sealedBy": "foreground"
+    },
+    "wiki": {
+      "state": "no-op",
+      "sealedAt": "2026-08-24T01:37:34.841Z",
+      "sealedBy": "wiki-producer"
+    }
+  },
+  "actions": {
+    "foreground-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "ac15da08ab2a6bb7584bf52b1ee54fcc69b3e83f3346950005b14e369fc9cdca",
+      "payload": {
+        "transcriptPath": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+        "cwd": "/home/drujensen/workspace/ollama",
+        "reason": "other",
+        "input": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "transcript_path": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+          "cwd": "/home/drujensen/workspace/ollama",
+          "prompt_id": "05cbd2c2-57a9-42a3-8386-b4d2298a6137",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "ended_at": "2026-08-24T01:37:34.836Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {},
+        "foregroundResult": {
+          "removedTransientFiles": 2,
+          "completedAt": "2026-08-24T01:37:34.843Z"
+        }
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-08-24T01:37:34.844Z",
+      "lastOutcomeCode": "completed"
+    },
+    "wiki-capture": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "e5378f6b92f72f72fcbfa01c51300b9b1e50300214849effb5dd2a0e8b2edc3d",
+      "payload": {
+        "transcriptPath": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+        "cwd": "/home/drujensen/workspace/ollama",
+        "reason": "other",
+        "input": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "transcript_path": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+          "cwd": "/home/drujensen/workspace/ollama",
+          "prompt_id": "05cbd2c2-57a9-42a3-8386-b4d2298a6137",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "ended_at": "2026-08-24T01:37:34.836Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-08-24T01:37:34.841Z"
+    },
+    "team-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "3aa81556f4e57336847566e4715fc8bf42cbfce52fc9eb51e48b41ad4e16f671",
+      "payload": {
+        "transcriptPath": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+        "cwd": "/home/drujensen/workspace/ollama",
+        "reason": "other",
+        "input": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "transcript_path": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+          "cwd": "/home/drujensen/workspace/ollama",
+          "prompt_id": "05cbd2c2-57a9-42a3-8386-b4d2298a6137",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "ended_at": "2026-08-24T01:37:34.836Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-24T01:37:34.881Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "38219d70-e77c-4007-8141-b23f1a041930",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-24T01:37:44.873Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-24T01:37:34.944Z"
+    },
+    "python-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "236e7ae7d93bb4dad51dcb0081b13a0c0282ba148034285340ee5f24ab3e30a1",
+      "payload": {
+        "transcriptPath": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+        "cwd": "/home/drujensen/workspace/ollama",
+        "reason": "other",
+        "input": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "transcript_path": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+          "cwd": "/home/drujensen/workspace/ollama",
+          "prompt_id": "05cbd2c2-57a9-42a3-8386-b4d2298a6137",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "ended_at": "2026-08-24T01:37:34.836Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-24T01:37:34.947Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "7c311551-0ba7-4c45-ae45-9a6161ecbbcb",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-24T01:37:44.873Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-24T01:37:35.030Z"
+    },
+    "reply-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "1255f961418874c5caf6e9ddd163822bcd17218d0e7aad33bdd4558a61052290",
+      "payload": {
+        "transcriptPath": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+        "cwd": "/home/drujensen/workspace/ollama",
+        "reason": "other",
+        "input": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "transcript_path": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+          "cwd": "/home/drujensen/workspace/ollama",
+          "prompt_id": "05cbd2c2-57a9-42a3-8386-b4d2298a6137",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "ended_at": "2026-08-24T01:37:34.836Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-24T01:37:35.033Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "eba8a425-450d-45c6-b291-6bd7233f2c59",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-24T01:37:44.873Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-24T01:37:35.102Z"
+    },
+    "callback": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "64e5d0b1033010d5f465d490e2aa2474616a28f01af6246a9a1f6fc6edff88c1",
+      "payload": {
+        "transcriptPath": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+        "cwd": "/home/drujensen/workspace/ollama",
+        "reason": "other",
+        "input": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "transcript_path": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+          "cwd": "/home/drujensen/workspace/ollama",
+          "prompt_id": "05cbd2c2-57a9-42a3-8386-b4d2298a6137",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "ended_at": "2026-08-24T01:37:34.836Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-24T01:37:35.105Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "d3d8ba1d-f236-4e1b-97b5-196ece03538b",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-24T01:37:44.873Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-24T01:37:35.164Z"
+    },
+    "notification": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "fcbdc3d95a367ad6c2e9f36a3eefc61d1956f93e2c517370952ec1e6ecf0431b",
+      "payload": {
+        "transcriptPath": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+        "cwd": "/home/drujensen/workspace/ollama",
+        "reason": "other",
+        "input": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "transcript_path": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+          "cwd": "/home/drujensen/workspace/ollama",
+          "prompt_id": "05cbd2c2-57a9-42a3-8386-b4d2298a6137",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "ended_at": "2026-08-24T01:37:34.836Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-24T01:37:35.167Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "0eddae3c-dd6e-4dd8-919a-a97919ad6d76",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-24T01:37:44.873Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-24T01:37:35.225Z"
+    },
+    "openclaw": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "6a1371f24c3b7f6067e9f97a6a92288a2e11b956ea026123c6523d5d19b3bdb6",
+      "payload": {
+        "transcriptPath": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+        "cwd": "/home/drujensen/workspace/ollama",
+        "reason": "other",
+        "input": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "transcript_path": "/home/drujensen/.claude/projects/-home-drujensen-workspace-ollama/107bd313-8226-4834-bf91-c373bb16d68d.jsonl",
+          "cwd": "/home/drujensen/workspace/ollama",
+          "prompt_id": "05cbd2c2-57a9-42a3-8386-b4d2298a6137",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "107bd313-8226-4834-bf91-c373bb16d68d",
+          "ended_at": "2026-08-24T01:37:34.836Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-24T01:37:35.228Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "90f1d21f-d2fb-4f4f-827a-30d73cb81ec2",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-24T01:37:44.873Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-24T01:37:35.285Z"
+    }
+  },
+  "owner": null,
+  "phase": "complete",
+  "completion": {
+    "completedAt": "2026-08-24T01:37:35.288Z",
+    "terminalDigest": "b17fe9cb0297731454ae76e8e52e5783e34f80cccea8e946ebca9ab87236ad0f",
+    "terminalRevision": 40
+  }
+}

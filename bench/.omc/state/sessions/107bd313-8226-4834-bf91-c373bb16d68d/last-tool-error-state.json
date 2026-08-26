@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"pkill -f eviction.sh 2>/dev/null && echo \\\"stopped stuck eviction script\\\"\\nsleep 2\\necho \\\"=== can ollama still service a request? (small model) ===\\\"\\ntimeout 120 curl -s http://localhos...",
+  "error": "Exit code 144",
+  "timestamp": "2026-08-24T03:41:42.563Z",
+  "retry_count": 1
+}

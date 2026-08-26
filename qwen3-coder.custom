@@ -1,13 +1,24 @@
-FROM qwen3-coder:30b
-PARAMETER num_ctx 64000
+FROM qwen3-coder-next:latest
 
-TEMPLATE {{ .Prompt }}
-RENDERER qwen3-coder
-PARSER qwen3-coder
-PARAMETER repeat_penalty 1.05
-PARAMETER stop <|im_start|>
-PARAMETER stop <|im_end|>
-PARAMETER stop <|endoftext|>
-PARAMETER temperature 0.7
-PARAMETER top_k 20
-PARAMETER top_p 0.8
+# Qwen3-Coder-Next official recommended sampling (Qwen/Qwen3-Coder-Next model card).
+# Differs from the old 30B-A3B settings this file used to carry (0.7 / 0.8 / 20).
+PARAMETER temperature 1.0
+PARAMETER top_p 0.95
+PARAMETER top_k 40
+
+# Deliberately NOT set, and why:
+#   TEMPLATE {{ .Prompt }}  - the model ships its own chat template; raw
+#                             passthrough would disable it and break tool calling
+#   RENDERER/PARSER         - written for the 30B-A3B; this is a different
+#                             architecture and is non-thinking, so nothing to parse
+#   PARAMETER stop ...      - inherited from the base. A child stop list REPLACES
+#                             the inherited one, so a partial list drops stops
+#   repeat_penalty          - not part of Qwen's recommendation for this model
+#   num_ctx                 - model default is 262144. Cap it here if the KV cache
+#                             plus 52GB of weights overruns the 62.5GB GTT pool
+
+# Full native context, matching ornith1.5 and qwen3.8 for apples-to-apples
+# comparison. 52GB of weights plus KV sits in a ~62.5GB GPU pool - verify
+# resident size after any change, because exhausting the pool forces TTM buffer
+# eviction, the amdgpu path that hard-crashed this machine on 2026-08-23.
+PARAMETER num_ctx 262144

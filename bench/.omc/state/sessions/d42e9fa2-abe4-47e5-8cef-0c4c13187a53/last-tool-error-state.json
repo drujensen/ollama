@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"pkill -f \\\"while pgrep -f .ollama pull\\\" 2>/dev/null; sleep 1\\necho \\\"=== is qwen3-coder-next registered? ===\\\"\\ncurl -s http://localhost:11434/api/tags | jq -r '.models[]|select(.name|tes...",
+  "error": "Exit code 144",
+  "timestamp": "2026-08-23T22:26:52.608Z",
+  "retry_count": 1
+}

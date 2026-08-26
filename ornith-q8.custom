@@ -1,0 +1,7 @@
+# Identical to ornith.custom except for the quantization, so a Q4_K_M vs Q8_0
+# comparison isolates quantization as the only variable.
+FROM hf.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF:Q8_0
+PARAMETER num_ctx 262144
+PARAMETER temperature 0.6
+PARAMETER top_p 0.95
+PARAMETER top_k 20
